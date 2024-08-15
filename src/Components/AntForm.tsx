@@ -1,13 +1,13 @@
 'use client';
 import type { FormProps } from 'antd';
 import { Button, Checkbox, Form, Input } from 'antd';
+type FieldType = {
+  username?: string;
+  password?: string;
+  remember?: string;
+};
 
 export default function AntForm(){
-    type FieldType = {
-        username?: string;
-        password?: string;
-        remember?: string;
-      };
       return (
            <Form
         name="basic"
