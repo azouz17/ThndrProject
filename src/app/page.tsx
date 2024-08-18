@@ -1,14 +1,17 @@
 'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
-import type { FormProps } from 'antd';
-import { Button, Checkbox, Form, Input } from 'antd';
-import AntForm from '../Components/AntForm'
+import { Col, Row, type FormProps } from 'antd';
+import Movies from '../Components/Movie'
 export default function Home() {
 
   return (
-    <main className={styles.main}>
-       <AntForm  />
-    </main>
+    <>
+    <Row>
+      <Col>
+       <Movies  />
+       </Col>
+       </Row>
+    </>
   );
 }
